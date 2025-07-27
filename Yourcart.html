@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Cart - Online Bookstore</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Pustak Bhandar</h1>
+        <h2>"Your one-stop shop for the best books across various genres!"</h2>
+    </header>
+
+    <style>
+        
+        body {
+            background-image: url('bookstore-background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        input, button {
+            margin: 8px 0;
+            padding: 10px;
+            width: 100%;
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 800px;
+            margin: auto;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        #bookGallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .bookItem {
+            background-color: #f5f5f5;
+            padding: 10px;
+            width: 180px;
+            margin: 10px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .bookItem img {
+            width: 100px;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .bookItem h3 {
+            font-size: 18px;
+            margin: 10px 0 5px;
+            color: #333;
+        }
+
+        .bookItem p {
+            font-size: 14px;
+            color: #666;
+            margin: 5px 0 10px;
+        }
+
+        #cart {
+            background-color: #fafafa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #cartItems li {
+            list-style: none;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Book Gallery Section with Add to Cart -->
+    <h2>Book Gallery</h2>
+    <div id="bookGallery">
+        <div class="bookItem">
+            <img src="image/book1.png" alt="A Good Girl's Guide to Murder">
+            <h3>A Good Girl's Guide to Murder</h3>
+            <p>A thrilling high-school mystery - A smart, determined girl uncovers dark secrets in her small town.</p>
+            <button onclick="addToCart('A Good Girls Guide to Murder')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book2.png" alt="I Love you to the Moon and Back">
+            <h3>I Love you to the Moon and Back</h3>
+            <p>Heartwarming and tender – A gentle story of love that stretches to infinity.</p>
+            <button onclick="addToCart('I Love you to the Moon and Back')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book3.png" alt="The kid who came from Space">
+            <h3>The kid who came from Space</h3>
+            <p>Mystery with a cosmic twist – A heartwarming journey to find a missing friend with interstellar surprises.</p>
+            <button onclick="addToCart('The kid who came from Space')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book4.png" alt="It Ends with Us">
+            <h3>It Ends with Us</h3>
+            <p>Unforgettable love story – A thought-provoking tale that stays with you long after the last page.</p>
+            <button onclick="addToCart('It Ends with Us')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book5.png" alt="The Stationery Shop of Tehran">
+            <h3>The Stationery Shop of Tehran</h3>
+            <p>Beautifully bittersweet – A love story set against the backdrop of 1950s Tehran, rich with culture and emotion.</p>
+            <button onclick="addToCart('The Stationery Shop of Tehran')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book6.png" alt="I don't Love you anymore">
+            <h3>I don't Love you anymore</h3>
+            <p>Raw and honest – A candid exploration of love, heartbreak, and moving on.</p>
+            <button onclick="addToCart('I donot Love you anymore')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book7.png" alt="Percy Jackson and the Olympians Wrath of the Triple Goddess">
+            <h3>Percy Jackson and the Olympians Wrath of the Triple Goddess</h3>
+            <p>Action-packed and mythical – Percy faces powerful gods and ancient prophecies in this thrilling adventure.</p>
+            <button onclick="addToCart('Percy Jackson and the Olympians Wrath of the Triple Goddess')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book8.png" alt="The Golden Road">
+            <h3>The Golden Road</h3>
+            <p>Heartwarming and vivid – A tale of growing up and exploring new horizons, filled with memorable characters.</p>
+            <button onclick="addToCart('The Golden Road')">Add to Cart</button>
+        </div>
+        <div class="bookItem">
+            <img src="image/book9.png" alt="Nexus">
+            <h3>Nexus</h3>
+            <p>Innovative and thrilling – A high-stakes adventure where the lines between human consciousness and technology blur.</p>
+            <button onclick="addToCart('Nexus')">Add to Cart</button>
+        </div>
+    
+    </div>
+
+    <!-- Cart Section -->
+    <h2>Shopping Cart</h2>
+    <div id="cart">
+        <ul id="cartItems"></ul>
+    </div>
+</div>
+
+
+<div id="down">
+    <h3>Stay Connected</h3>
+    <a href="#" class="fa fa-facebook" style="text-decoration: none; padding: 10px 12px;color: rgb(255, 255, 255); "></a>
+    <a href="#" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+    <a href="#" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+    <h2>Contact Address</h2>
+    <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+        PDEU road,Raysan
+        Gandhinagar, Gujarat  
+    </a> <br>
+    <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+      +91 9262766627
+    </a> <br>
+    <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+      patelaayush11330@gmail.com
+      </a>
+</div>
+<div id="footer" > Developed By : Aayush 
+    <p>&copy; 2024 Bookstore. All rights reserved.</p>
+</div> 
+
+<script>
+    // Add to Cart functionality
+    let cartItems = [];
+    function addToCart(bookTitle) {
+        cartItems.push(bookTitle);
+        displayCartItems();
+    }
+    // Display Cart items
+    function displayCartItems() {
+        const cartList = document.getElementById('cartItems');
+        cartList.innerHTML = ''; // Clear previous items
+        cartItems.forEach((item, index) => {
+            const li = document.createElement('li');
+            li.textContent = `${item} `;
+            const removeBtn = document.createElement('button');
+            removeBtn.textContent = 'Remove';
+            removeBtn.onclick = () => removeFromCart(index);
+            li.appendChild(removeBtn);
+            cartList.appendChild(li);
+        });
+    }
+    // Remove item from cart
+    function removeFromCart(index) {
+        cartItems.splice(index, 1);
+        displayCartItems();
+    }
+
+    src="script.js"
+</script>
+
+</body>
+</html>

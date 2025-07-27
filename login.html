@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Online Book Store</title>
+    <link rel="stylesheet" href="book.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Pustak Bhandar</h1>
+        <h2>"Your one-stop shop for the best books across various genres!"</h2>  
+    </header>
+
+    <div class="logincontainer">
+        <!-- Login Section -->
+        <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" required>
+        
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+        
+        <button type="button" onclick="login()">Login</button>
+    </form>
+
+    <div id="loginPopup" class="popup">
+        <p>Login Successful!</p>
+        <button onclick="closePopup('loginPopup')">Close</button>
+    </div>
+
+    <style>
+    .logincontainer {
+        max-width: 600px;
+        margin: auto;
+        padding: 20px;
+    }
+    input, button {
+        margin: 8px 0;
+        padding: 10px;
+        width: 100%;
+    }
+    </style>
+    
+    <div id="down">
+        <h3>Stay Connected</h3>
+        <a href="#" class="fa fa-facebook" style="text-decoration: none; padding: 10px 12px;color: rgb(255, 255, 255); "></a>
+        <a href="#" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <a href="#" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <h2>Contact Address</h2>
+        <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+            PDEU road,Raysan
+            Gandhinagar, Gujarat  
+        </a> <br>
+        <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+          +91 9262766627
+        </a> <br>
+        <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+          patelaayush11330@gmail.com
+          </a>
+    </div>
+    <div id="footer" > Developed By : Aayush 
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </div> 
+
+<script>
+    function login() {
+        const username = document.getElementById('username').value;
+        const password = document.getElementById('password').value;
+        
+        if (username && password) {
+            document.getElementById('loginPopup').classList.add('show');
+        } else {
+            alert("Please enter both username and password.");
+        }
+    }
+    function closePopup(popupId) {
+        document.getElementById(popupId).classList.remove('show');
+    }
+
+    src="script.js"
+</script>
+
+</body>
+</html>

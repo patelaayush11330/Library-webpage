@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Book Store</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <div id="header">
+        <h1>Welcome to Online Pustak Bhandar</h1>
+        <p>"Your one-stop shop for the best books across various genres!"</p>
+    </div>
+
+    <div class="container">
+        <!-- Navigation Buttons -->
+        <div class="nav-buttons">
+            <a >Home</a>
+            <a  href="/gallery.html" target="_blank">Gallery</a>
+            <a  href="/categories.html" target="_blank">Categories</a>
+            <a  href="/login.html">Login</a>
+            <a  href="/register.html">Register</a>
+            <a  href="/Yourcart.html">Your cart</a> 
+        </div>
+
+        <!-- Home Section -->
+        <div id="home" class="section">
+            <h2>About Our Bookstore:</h2>
+            <p>Welcome to our online bookstore! We offer a wide selection of books across various categories such as fiction, non-fiction, self-help, and more. Whether you're an avid reader or someone looking for the perfect gift, we have something for everyone. Our mission is to bring the best books to your doorstep and make reading enjoyable and accessible for all.</p>
+            <img id="main-image" src="image/bookstore.jpeg" alt="Bookstore Image"> 
+
+            <!-- Reviews Section -->
+            <h2>What Our Readers Are Saying :</h2>
+            <div class="reviews">
+                <div class="review-card">
+                    <img src="image/ravi.jpg" alt="Reviewer 1">
+                    <h4>Ravi Raj Chauhan</h4>
+                    <p>"A True Paradise for Book Lovers!"
+                        Online Pustak Bhandar has become my go-to place for books. The variety here is unmatched, covering everything from timeless classics to the latest releases. I especially love how easy it is to navigate the site and find exactly what I'm looking for. Their descriptions are spot-on, and I always get exactly what I expect. Highly recommended!</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/dipesh.jpg" alt="Reviewer 2">
+                    <h4>Dipesh Pandey</h4>
+                    <p>"Fast Delivery and Great Customer Service!"
+                        I ordered a few rare titles, and they arrived on time and in excellent condition! Online Pustak Bhandar’s team was very responsive when I had a question, and the whole process was smooth. It’s rare to find such a reliable online bookstore that also values its customers.</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/kusum.png" alt="Reviewer 2">
+                    <h4>Kusum Patel</h4>
+                    <p>"Wide Selection and Great Deals!"
+                        Online Pustak Bhandar is perfect for those who love to discover new reads at great prices. The discounts are generous, and they frequently offer promotions that make it so tempting to grab more books. The website is well-organized, and checking out is a breeze. Love shopping here!</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/raj.jpg" alt="Reviewer 2">
+                    <h4>Raj Patel</h4>
+                    <p>"Perfect for All Ages and Genres!"
+                        Whether I’m looking for children’s books, academic material, or just something to unwind with, Online Pustak Bhandar has it all. I recently bought a mix of novels, and all of them arrived quickly and well-packaged. The variety here means there’s something for every reader.</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/alok.png" alt="Reviewer 3">
+                    <h4>Aalok Patel</h4>
+                    <p>"Easy Browsing and Seamless Ordering!"
+                        Shopping at Online Pustak Bhandar feels effortless. The website is simple to use, with excellent filters that help me find specific genres or authors within seconds. Their personalized recommendations based on my past purchases are always on point too! This has become my favorite online bookstore.</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/pradeep.png" alt="Reviewer 3">
+                    <h4>Pradeep Gupta</h4>
+                    <p>"Affordable and Quality Collection!"
+                        Online Pustak Bhandar offers books at affordable rates, and they always seem to have something for every budget. I recently bought a series of self-help books, and the quality of both the service and the products was top-notch. Highly recommended for those who value affordability and variety!</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/satyam.png" alt="Reviewer 3">
+                    <h4>Satyam Kumar Mishra</h4>
+                    <p>"An Unmatched Digital Bookstore Experience!"
+                        I have been shopping on Online Pustak Bhandar for months, and it’s genuinely a pleasure each time. Their recommendations are thoughtfully curated, and I appreciate the inclusion of lesser-known gems alongside bestsellers. Every book arrives in mint condition. Keep up the fantastic work!</p>
+                </div>
+                <div class="review-card">
+                    <img src="image/biraj.png" alt="Reviewer 3">
+                    <h4>Biraj Yadav</h4>
+                    <p>"A Treasure Trove for Bookworms!"
+                        Online Pustak Bhandar feels like a treasure hunt every time I visit. Their collection spans all genres and includes books that are sometimes hard to find elsewhere. I’m consistently impressed by how well-organized their catalog is, and my orders always arrive quickly and in perfect condition.</p>
+                </div>
+            </div>
+
+            <!-- FAQ Section -->
+            <h2>Frequently Asked Questions:</h2>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(1)">Q: How do I place an order?</div>
+                <div class="faq-answer" id="faq-answer-1">Simply browse through our collection, add items to your cart, and proceed to checkout where you'll enter your payment and shipping details.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(2)">Q: What payment methods do you accept?</div>
+                <div class="faq-answer" id="faq-answer-2">We accept various payment methods, including credit cards, debit cards, and PayPal.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleAnswer(3)">Q: How long will it take for my order to arrive?</div>
+                <div class="faq-answer" id="faq-answer-3">Orders typically take 5-7 business days to arrive, depending on your location.</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="down">
+        <h3>Stay Connected</h3>
+        <a href="#" class="fa fa-facebook" style="text-decoration: none; padding: 10px 12px;color: rgb(255, 255, 255); "></a>
+        <a href="#" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: rgb(229, 243, 229);"></a>
+        <a href="#" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: rgb(245, 245, 245);"></a>
+        <h2>Contact Address</h2>
+        <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: rgb(241, 247, 241); ">
+            PDEU road,Raysan
+            Gandhinagar, Gujarat  
+        </a> <br>
+        <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: rgb(233, 237, 233);">
+          +91 9262766627
+        </a> <br>
+        <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:rgb(242, 244, 242);">
+          patelaayush11330@gmail.com
+          </a>
+    </div>
+    <div id="footer" > Developed By: Aayush 
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </div> 
+
+    <script>
+         function toggleAnswer(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+           answer.style.display = answer.style.display === "none" ? "block" : "none";
+         }
+    </script>
+
+</body>
+</html>

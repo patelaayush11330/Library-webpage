@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Categories - Online Book Store</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Online Pustak Bhandar</h1>
+        <h2>"Your one-stop shop for the best books across various genres!"</h2>
+        <button onclick="openModal()">Login / Sign Up</button>
+    </header>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <h2>Explore Our Categories</h2>
+        <div class="category" onclick="showBooks('fiction')">Fiction</div>
+        <div class="category" onclick="showBooks('non-fiction')">Non-Fiction</div>
+        <div class="category" onclick="showBooks('science')">Science</div>
+        <div class="category" onclick="showBooks('history')">History</div>
+        <div class="category" onclick="showBooks('kids')">Kids</div>
+        <div class="category" onclick="showBooks('romance')">Romance</div>
+        <div class="category" onclick="showBooks('thriller')">Thriller</div>
+    </section>
+
+    <!-- Book List Section -->
+    <section id="book-list">
+        <h2>Books</h2>
+        <div id="books"></div>
+    </section>
+
+    <!-- Modal for Login / Sign Up -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Login / Sign Up</h2>
+            <input type="text" id="username" placeholder="Username">
+            <input type="password" id="password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <button onclick="signUp()">Sign Up</button>
+        </div>
+    </div>
+
+    <div id="down">
+        <h3>Stay Connected</h3>
+        <a href="#" class="fa fa-facebook" style="text-decoration: none; padding: 10px 12px;color: rgb(255, 255, 255); "></a>
+        <a href="#" class="fa fa-instagram" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <a href="#" class="fa fa-twitter" style="text-decoration: none; padding: 10px 12px;color: white;"></a>
+        <h2>Contact Address</h2>
+        <a href="#" class="fa fa-home" style="text-decoration: none; padding: 10px 12px;color: white; ">
+            PDEU road,Raysan
+            Gandhinagar, Gujarat  
+        </a> <br>
+        <a href="#" class="fa fa-phone" style="text-decoration: none; padding: 10px 12px;color: white;">
+          +91 9262766627
+        </a> <br>
+        <a href="#" class="fa fa-envelope" style="text-decoration: none; padding: 10px 12px; color:white;">
+          patelaayush11330@gmail.com
+          </a>
+    </div>
+    <div id="footer" > Developed By : Aayush 
+        <p>&copy; 2024 Bookstore. All rights reserved.</p>
+    </div> 
+
+    <script src="script.js"></script>
+</body>
+</html>
