@@ -18,16 +18,16 @@ This project demonstrates skills in **front-end web development**, responsive de
 
 Online-Pustak-Bhandar/
 │
-├── index.html           # Homepage
-├── gallery.html         # Book gallery with details
-├── categories.html      # Category-based book listings
-├── Yourcart.html        # Shopping cart page
-├── login.html           # User login page
-├── register.html        # User registration page
-├── script.js            # JavaScript for dynamic functionality
-├── styles.css           # Global styling
-├── image/               # Book images, backgrounds, and icons
-└── README.md            # Project documentation
+├── index.html           
+├── gallery.html         
+├── categories.html      
+├── Yourcart.html        
+├── login.html           
+├── register.html        
+├── script.js            
+├── styles.css           
+├── image/              
+└── README.md            
 
 🛠️ Technologies Used
 
@@ -40,6 +40,6 @@ Online-Pustak-Bhandar/
 
 1. **Clone the repository**
 
-   git clone https://github.com/yourusername/online-pustak-bhandar.git
+   git clone 
 
 
