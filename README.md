@@ -40,6 +40,6 @@ Online-Pustak-Bhandar/
 
 1. **Clone the repository**
 
-   git clone 
+   git clone https://github.com/patelaayush11330/Library-webpage.git
 
 
